@@ -1,5 +1,5 @@
 var client;
-const size = 100;
+
 
 const getHash = async (email) => {
   const finalEmail = email.trim().toLowerCase();
@@ -8,7 +8,9 @@ const getHash = async (email) => {
 };
 
 
-const getImgUrl = async (hash) => {
+const getImgUrl =(email) => {
+  const hash = getHash(email);
+  const size = 100;
   return `https://www.gravatar.com/avatar/${hash}?s=${size}&d=identicon`;
 };
 
@@ -26,9 +28,7 @@ async function renderImage() {
     contact: { email },
     contact:{name},
   } = contactData;
-
-  const hash = await getHash(email); 
-  const imgUrl = await getImgUrl(hash); 
+  const imgUrl =getImgUrl(email); 
   greetingElement.innerText=`Hello, ${name}`
   avatarElement.setAttribute('src', imgUrl);
 }
