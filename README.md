@@ -109,3 +109,7 @@ fdk pack
 - Navigate to Apps > Manage Apps > Upload Custom App.
 - Upload the zipped file.
 For more info [FreshDesk Docs](https://developers.freshworks.com/docs/app-sdk/v2.3/freshdesk/app-submission-process/custom-apps/)
+
+## Screenshots
+<img width="240" alt="image" src="https://github.com/user-attachments/assets/8216fb70-2c99-4340-8e6a-1b6b3dd21ba5">
+
